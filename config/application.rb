@@ -4,6 +4,8 @@ require 'bundler/setup'
 require 'pp'
 require 'pakyow'
 
+require 'rdiscount'
+
 module PakyowApplication
   class Application < Pakyow::Application
     configure(:development) do
@@ -74,6 +76,12 @@ module PakyowApplication
 
         # Views#apply
         # presenter.view.scope(:post).apply(data)
+      end
+    end
+
+    presenter do
+      parser :md do |content|
+        RDiscount.new(content).to_html
       end
     end
   end
