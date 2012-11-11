@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/metabahn/pakyow.git
-  revision: 3d0c1395bd52d49e82c4c0c46b826bd93610f474
+  revision: 84e7441a837b7707b0357899e8a55ce517976853
   specs:
     pakyow (0.7.2)
       pakyow-core (= 0.7.2)
@@ -20,7 +20,7 @@ GEM
   specs:
     daemons (1.1.9)
     eventmachine (0.12.10)
-    i18n (0.6.0)
+    i18n (0.6.1)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -34,7 +34,7 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
-    treetop (1.4.10)
+    treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
 
